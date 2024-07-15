@@ -90,4 +90,24 @@ By default a flatlist has an infinite/unmeasured height, we can control this by 
 
 is a javascript method from react-native that we can use to access properties of the mobile device like screen width and height... then we can add stylings based on these values.
 
-# Execute Platform-specific code
+use the "useWindowDimensions" hook to monitor dynamic orientation change while using app
+
+# Orientations:
+
+Set orientation to default on app.json to allow flipping for landscape.
+
+[NB:]
+On Landscape, using keyboard might cover part of view (especially on IOS), to solve this, we need to wrap our view in KeyboardAvoidingView component and then in ScrollView to make it scrollable.
+
+# Execute Platform-specific code:
+
+We can use the "Platform" from react-native.
+
+There are different approaches to doing this:
+
+1. Platform.OS === 'android' / 'ios'
+2. Platform.select({ios: '', android: ''})
+3. Create file for a specific OS. (Card.android.js, Card.ios.js)
+   [{important}: remove the android/ios xtension when you import the files]
+
+# Navigation:
