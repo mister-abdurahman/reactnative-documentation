@@ -86,4 +86,8 @@ By default a flatlist has an infinite/unmeasured height, we can control this by 
 
 # Adaptive and Responsive UIs
 
+# Dimensions API:
+
+is a javascript method from react-native that we can use to access properties of the mobile device like screen width and height... then we can add stylings based on these values.
+
 # Execute Platform-specific code
