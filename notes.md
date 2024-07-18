@@ -36,6 +36,7 @@ stylings do not cascade - (child inheriting style from parent)
 - When setting a view or anyother component to "flex: 1", make sure its parent that need to be set is set to "flex:1" to avoid those collapsing isssues.
 - Setting % in styling, refers to the % of the parent it is in.
 - min, max, % can all be combined to achieve dynamic responsive app
+- the style prop can recieve an object, an array or a callback
 
 # IOS & Android styling differences:
 
@@ -53,6 +54,8 @@ To build your own button, you need to use the Pressable component and style it a
 We've used modals.
 
 Status bar can be used to adjust the bar of the view.
+
+we can add a background color to the app in the app.json file
 
 # Optimizing Lists:
 
@@ -110,4 +113,24 @@ There are different approaches to doing this:
 3. Create file for a specific OS. (Card.android.js, Card.ios.js)
    [{important}: remove the android/ios xtension when you import the files]
 
+# IOS:
+
+for shadows to work on IOS, the container should have a background color.
+
 # Navigation:
+
+React Navigation is a package used for navigation.
+
+using the native-stack comes with a template we can customize, like ash color bg and header with screen name. (edit with an option props)
+We need the Stack.Navigator and all the different Stack.Screens to be navigated.
+
+So we get special props passed to the components used in the Stack Navigator Screens ~ "navigation, route",
+we can also alternatively use the useNavigation hook to use the navigation method in any component.
+
+We can pass data through navigation by adding an object of our data in the navigation.navigate method and recieve it by using the route props in our components
+
+# Styling Screen Headers & Backgrounds:
+
+screenOptions props is added for a default props for all screens on the navigator, then individual option stylings take precedence if added
+
+options prop on individual screens can also recieve a callback to add dynamic style/data to the screen.
