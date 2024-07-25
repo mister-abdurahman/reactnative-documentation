@@ -134,3 +134,32 @@ We can pass data through navigation by adding an object of our data in the navig
 screenOptions props is added for a default props for all screens on the navigator, then individual option stylings take precedence if added
 
 options prop on individual screens can also recieve a callback to add dynamic style/data to the screen.
+
+Alternatively, we can also set the options inside the component using navigation.setOptions
+Its a good practice to put the above in a useLayoutEffect (expo app complains [for max]).
+
+My convention: So use the navigation and route props if we're directly using it in the screen component but use thier hooks if we're using it in a child component.
+
+[NB]
+When setting a remote image (uri), we need to set its width and height cos RN doesnt know its dimensions
+If you need to interact with any of the header options set, just set it inside the component using the navigation.setOptions
+
+# Drawer Navigation
+
+Even though material tabs are a bit more specific for android, they can also be used for IOS. Bottom Tab works best for both.
+
+# Nested Navigators
+
+Create the navigator to be nested with its screens and pass it as a component to the point where we want the extra navigation
+
+# Managing App Wide State
+
+React Context & Redux (same as on web)
+
+# Form
+
+do not use autocorrect on email and similaer inputs
+
+# Types:
+
+check out sanni "awesome project" on github for type pattern.
