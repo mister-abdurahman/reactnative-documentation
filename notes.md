@@ -163,3 +163,15 @@ do not use autocorrect on email and similaer inputs
 # Types:
 
 check out sanni "awesome project" on github for type pattern.
+
+# routing:
+
+router.replace() doesnt give us a back button as it replaces the screen in the stack
+
+# User Auth
+
+firebase passwords must be at least 6 chars
+
+# Storing data on the Device
+
+it works similar to storing on web localStorage.
