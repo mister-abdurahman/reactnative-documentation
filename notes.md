@@ -172,6 +172,10 @@ router.replace() doesnt give us a back button as it replaces the screen in the s
 
 firebase passwords must be at least 6 chars
 
+In the case of token expiration, we either log the user out or reset the token
+
 # Storing data on the Device
 
 it works similar to storing on web localStorage.
+
+# Native Device features (Camera, User Location, Device storage etc)
