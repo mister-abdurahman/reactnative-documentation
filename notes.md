@@ -179,3 +179,5 @@ In the case of token expiration, we either log the user out or reset the token
 it works similar to storing on web localStorage.
 
 # Native Device features (Camera, User Location, Device storage etc)
+
+For Using Camera, rely largely on expo docs.
