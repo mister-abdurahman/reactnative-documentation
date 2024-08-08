@@ -181,3 +181,8 @@ it works similar to storing on web localStorage.
 # Native Device features (Camera, User Location, Device storage etc)
 
 For Using Camera, rely largely on expo docs.
+
+For IOS, we need to use the verifypermission method to successfully use the expo imagepicker
+For Location, both IOS and Android requires permissions
+
+NB: Use require if its an image on the project, but uri if its an external image.
