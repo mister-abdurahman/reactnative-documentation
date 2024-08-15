@@ -186,3 +186,6 @@ For IOS, we need to use the verifypermission method to successfully use the expo
 For Location, both IOS and Android requires permissions
 
 NB: Use require if its an image on the project, but uri if its an external image.
+
+General knowledge:
+We can convert a lat and lon to a human readable address using a geocoding api
